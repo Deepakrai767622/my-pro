@@ -1,0 +1,129 @@
+//  main section
+
+@media (max-width: 1350px) {
+  //main start
+  main {
+    width: 100%;
+
+    .main-inner {
+      justify-content: center;
+    }
+
+    .banner {
+      flex: 1 1 30rem;
+      svg {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+      }
+    }
+
+    .text {
+      padding-left: 100px;
+      flex: 1 1 30rem;
+      padding: 0;
+      margin-top: 50px;
+      h1 {
+        font-family: $raleway;
+        font-weight: 400;
+        color: darken($primary-color, 15);
+        font-size: 60px;
+        letter-spacing: 10px;
+        transition: all 0.5s;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: $raleway;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 40px;
+        color: var(--lightColor);
+        margin-top: 20px;
+        letter-spacing: 3px;
+        transition: all 0.5s;
+        text-align: left;
+        text-align: center;
+      }
+
+      p {
+        font-family: $raleway;
+        font-weight: 200;
+        font-size: 30px;
+        margin: 10px 0;
+        color: var(--lightColor);
+        transition: all 0.5s;
+        text-align: left;
+      }
+
+      .btn-banner {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background: $primary-color;
+        line-height: 50px;
+        color: #fff;
+        text-align: center;
+        border-radius: 100px;
+        font-size: $fs-16;
+        font-family: $raleway;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin: auto;
+        margin-top: 30px;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background: darken(#00dbbf, 10);
+        }
+      }
+    }
+  }
+
+  .readmore span {
+    position: relative;
+    transform: translateX(0%);
+    margin-top: 10px;
+  }
+
+  .readmore:before {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact .contact-inner h1 {
+    font-size: 24px;
+  }
+
+  .skill {
+    padding: 0px;
+  }
+
+  .skill .skill-inner {
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 20px;
+  }
+
+  .container {
+    padding: 2px;
+  }
+
+  main:after {
+    background-color: transparent;
+  }
+
+  .p_info p {
+    width: 96%;
+  }
+
+  .f-banner svg {
+    width: 100%;
+  }
+
+  .pr-text {
+    padding: 20px;
+  }
+}
